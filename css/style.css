@@ -27,6 +27,7 @@
 body {
     width: 100%;
     color: white;
+    /* color: black; */
     font-family: Montserrat, serif;
     background-color: black;
     /* background-color: white; */
@@ -77,7 +78,24 @@ body {
     transition: 0.4s;
 }
 
+
+figure {
+    display: flex;
+    flex-flow: row;
+}
+
+figcaption {
+    margin: 1rem;
+}
+
+
+
 @media (max-width: 768px) {
+
+    /* body {
+        align-items: center;
+    } */
+
     .nav-links {
         display: none;
         flex-direction: column;
