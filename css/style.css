@@ -25,7 +25,7 @@
 
 /* Paramètre - body */
 body {
-    width: 100%;
+    width: clamp(464px, 768px, 1240px);
     color: white;
     /* color: black; */
     font-family: Montserrat, serif;
@@ -87,7 +87,19 @@ figcaption {
     margin: 1rem;
 }
 
+/* .hamburger-menu {
+    display: none;
+}
 
+.btntest:focus .hamburger-menu {
+    display: flex;
+} */
+
+
+
+.droits {
+    font-size: small;
+}
 
 @media (max-width: 768px) {
 
