@@ -83,6 +83,11 @@ figcaption {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        align-items: center;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
