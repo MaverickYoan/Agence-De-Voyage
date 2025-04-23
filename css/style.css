@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url('../polices/Montserrat-Italic-VariableFont_wght.ttf'),
-        url('../polices/Montserrat-Regular.ttf');
-    url('../polices/Montserrat-VariableFont_wght.ttf');
+         url('../polices/Montserrat-Regular.ttf');
+         url('../polices/Montserrat-VariableFont_wght.ttf');
 }
 
 @font-face {
     font-family: 'Roboto', sans-serif;
     src: url("../polices/Roboto-Italic-VariableFont_wdth,wght.ttf"),
-        url("../polices/Roboto-VariableFont_wdth,wght.ttf");
+         url("../polices/Roboto-VariableFont_wdth,wght.ttf");
 }
 
 *::before,
