@@ -13,10 +13,10 @@
 /* Paramètre - body */
 body {
     width: 100%;
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: Montserrat, sans-serif;
-    /* background-color: black; */
-    background-color: white;
+    background-color: black;
+    /* background-color: white; */
 
 }
 
@@ -107,7 +107,7 @@ body {
     }
 
     .hamburger-menu.active .bar:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -5px);
+        transform: rotate(-45deg) translate(10px, -10px);
         /* transform: translateY(0px) rotate(135deg); */
     }
 }
