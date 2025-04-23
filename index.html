@@ -22,7 +22,7 @@
     <meta name="keywords" content="Voyages, Destination, Tibet, Seychelles">
     <!-- // - 2 - LINK -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href=css\style.css rel=stylesheet>
+    <link href="css/output.css" rel=stylesheet>
     <!-- <link rel="stylesheet" href="font.css"> -->
     <title>Agence2Voyages</title><!-- TITRE -->
 </head>
@@ -30,56 +30,58 @@
 
 <!-- * BODY -->
 
-<body id="content"><!-- id content / navbar / hamburger / id et class navLinks -->
-    <nav class="navbar">
-        <div class="hamburger-menu" id="hamburgerMenu">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#welcome">Welcome</a></li>
-            <li><a href="destination.html">Destination</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
-    <!-- * home section -->
-
-    <section class="home"><!-- home / h1 / id welcome / aside / img -->
-        <h1 id="home">Agence2Voyages</h1>
-        <img src="images\favicon.ico" alt="voilier bleu">
-    </section>
-
-
-
-    <!-- * FOOTER -->
-
-    <footer><!-- * droits / h6 -->
-        <div class="droits">
-            <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
-                <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
-            </h6>
-            <a class="agrees" href="" target="_blank">
-            </a>
-        </div>
-
-    </footer>
-
-
-    <!-- * a / p / svg -->
-
-    <a href="#content" class="back-to-top"><!--  back-to-top -->
-        <p> </p>
-        <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-        <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14" />
-            <path d="m12 4 7 7-7 7" />
+<body id="content" class="bg-black text-white"><!-- id content / navbar / hamburger / id et class navLinks -->
+    <header>
+        <svg id="Layer_1" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="512"
+             class="fill-white w-20 h-20" xmlns="http://www.w3.org/2000/svg">
+            <g>
+                <path d="m3.5 7.5h17c.8286133 0 1.5-.6713867 1.5-1.5s-.6713867-1.5-1.5-1.5h-17c-.8286133 0-1.5.6713867-1.5 1.5s.6713867 1.5 1.5 1.5z"/>
+                <path d="m20.5 10.5h-17c-.8286133 0-1.5.6713867-1.5 1.5s.6713867 1.5 1.5 1.5h17c.8286133 0 1.5-.6713867 1.5-1.5s-.6713867-1.5-1.5-1.5z"/>
+                <path d="m20.5 16.5h-17c-.8286133 0-1.5.6713867-1.5 1.5s.6713867 1.5 1.5 1.5h17c.8286133 0 1.5-.6713867 1.5-1.5s-.6713867-1.5-1.5-1.5z"/>
+            </g>
         </svg>
-    </a>
+        <nav class="navbar">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="destination.html">Destination</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+        <!-- * home section -->
+        <section class="home"><!-- home / h1 / id welcome / aside / img -->
+            <h1 id="home">Agence2Voyages</h1>
+            <img src="images\favicon.ico" alt="voilier bleu">
+        </section>
+    </header>
 
-    <script src="script\script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
+
+<!-- * FOOTER -->
+
+<footer><!-- * droits / h6 -->
+    <div class="droits">
+        <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+            <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
+        </h6>
+        <a class="agrees" href="" target="_blank">
+        </a>
+    </div>
+
+</footer>
+
+
+<!-- * a / p / svg -->
+
+<a href="#content" class="back-to-top"><!--  back-to-top -->
+    <p></p>
+    <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
+    <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
+        <path d="M5 12h14"/>
+        <path d="m12 4 7 7-7 7"/>
+    </svg>
+</a>
+
+<script src="script\script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 
 </body>
 
