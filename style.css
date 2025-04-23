@@ -13,10 +13,11 @@
 /* Paramètre - body */
 body {
     width: 100%;
-    color: white;
-    font-family: Arial, sans-serif;
-    background-color: black;
-    /* background-color: white; */
+    color: rgb(0, 0, 0);
+    font-family: Montserrat, sans-serif;
+    /* background-color: black; */
+    background-color: white;
+
 }
 
 /* Paramètre - .navbar */
@@ -64,6 +65,17 @@ body {
     transition: 0.4s;
 }
 
+#home {
+    align-items: center;
+}
+
+.home {
+    margin-left: 20%;
+}
+
+
+
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -86,8 +98,8 @@ body {
     }
 
     .hamburger-menu.active .bar:nth-child(1) {
-        /* transform: rotate(45deg) translate(5px, 5px); */
-        transform: translateY(0px) rotate(-135deg);
+        transform: rotate(45deg) translate(5px, 5px);
+        /* transform: translateY(0px) rotate(-135deg); */
     }
 
     .hamburger-menu.active .bar:nth-child(2) {
@@ -95,8 +107,8 @@ body {
     }
 
     .hamburger-menu.active .bar:nth-child(3) {
-        /* transform: rotate(-45deg) translate(5px, -5px); */
-        transform: translateY(0px) rotate(135deg);
+        transform: rotate(-45deg) translate(5px, -5px);
+        /* transform: translateY(0px) rotate(135deg); */
     }
 }
 
