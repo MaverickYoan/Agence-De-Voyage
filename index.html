@@ -1,4 +1,4 @@
-<!-- + LEGENDE DES COMMENTAIRES  -->
+<!-- + LEGENDE DES COMMENTAIRES -->
 
 <!-- COMMENTAIRES -->
 <!-- * OK -->
@@ -42,17 +42,77 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">à propos</a></li>
             <li><a href="destination.html">Destination</a></li>
+            <li><a href="#reservation">Réservation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
     <!-- * home section -->
 
     <section class="home"><!-- home / h1 / id home / img -->
         <h1 id="home">Agence2Voyages</h1>
-        <img src="images\logo.png" alt="voilier bleu">
+        <img class="logo" src="images\logo.png" width="50px"
+            alt="voilier bleu"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </section>
+
+
+    <!-- * reservation section -->
+
+    <section class="reservation"><!-- reservation / h1 / id reservation / img -->
+        <h1 id="reservation">reservation</h1>
+        <img src="" alt="">
+    </section>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- * animation plane -->
+
+    <style type="text/css">
+        .home {
+            background: url(images/sky.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .sky {
+            position: absolute;
+            top: 30%;
+            right: -50px;
+            animation: sky 7s linear 0s infinite reverse;
+            z-index: 99;
+        }
+
+        .sky img {
+            width: 50px;
+        }
+
+        @keyframes sky {
+            from {
+                top: 50px;
+                right: -40px;
+            }
+
+            to {
+                top: 300px;
+                right: 100%;
+            }
+        }
+    </style>
+
+    <div class="sky">
+        <img src="images/plane.png">
+    </div>
+
+    <!-- * contact section -->
+
+    <section class="contact"><!-- contact / h1 / id contact / img -->
+        <h1 id="contact">contact</h1>
+        <img src="" alt="">
+    </section>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
     <!-- * FOOTER -->
@@ -69,10 +129,9 @@
     </footer>
 
 
-    <!-- * a / p / svg -->
 
+    <!-- * a / p / svg -->
     <a href="#content" class="back-to-top"><!-- back-to-top -->
-        <p> </p>
         <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
         <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
             <path d="M5 12h14" />
