@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@layer base {
+    h1 {
+        @apply md:text-5xl font-semibold py-5
+    }
+}
+
+@theme {
+    --font-montserrat: Montserrat;
+}
