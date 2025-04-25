@@ -33,7 +33,7 @@
 
 <!-- * BODY -->
 
-<body class="min-h-screen bg-black text-white font-montserrat">
+<body class="min-h-screen bg-black text-white font-montserrat flex flex-col">
 <header class="container mx-auto relative md:flex justify-between items-center top-8 md:h-34">
     <h1 class="hidden md:block">Agence2Voyage</h1>
     <img alt="Logo" class="w-22 md:w-33 mx-auto md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2"
@@ -41,8 +41,8 @@
 
     <!--Menu PC-->
     <nav class="hidden md:flex gap-10 text-xl">
-        <a href="">Welcome</a>
-        <a href="">Destinations</a>
+        <a href="index.html">Welcome</a>
+        <a href="#destinations">Destinations</a>
         <a href="">Contact</a>
     </nav>
 
@@ -66,6 +66,16 @@
         </button>
     </nav>
 </header>
+<main class="container mx-auto grow">
+    <section id="destinations" class="mt-40">
+        <div class="flex flex-wrap">
+            <img src="images/Tibet/Tibet%201.png" alt="Tibet" class="mx-auto">
+            <div class="grow text-center">
+                <p>Destination 1</p>
+            </div>
+        </div>
+    </section>
+</main>
 <script src="script/destination.js"></script>
 </body>
 
