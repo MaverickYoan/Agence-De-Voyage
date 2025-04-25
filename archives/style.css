@@ -27,6 +27,7 @@
 body {
     width: 100%;
     color: white;
+    /* color: black; */
     font-family: Montserrat, serif;
     background-color: black;
     /* background-color: white; */
@@ -77,16 +78,22 @@ body {
     transition: 0.4s;
 }
 
-figcaption {
-    display: block;
-    justify-self: center;
+figure {
+    display: flex;
+    flex-flow: row;
 }
+
+figcaption {
+    margin: 1rem;
+}
+
+
 
 @media (max-width: 768px) {
 
-    body {
+    /* body {
         align-items: center;
-    }
+    } */
 
     .nav-links {
         display: none;
@@ -120,6 +127,15 @@ figcaption {
     .hamburger-menu.active .bar:nth-child(3) {
         transform: rotate(-45deg) translate(10px, -5px);
         /* transform: translateY(0px) rotate(135deg); */
+    }
+
+    figure {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    figcaption {
+        margin: 0rem;
     }
 }
 
