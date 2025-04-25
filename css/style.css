@@ -106,6 +106,10 @@ figcaption {
     display: flex;
 } */
 
+.home {
+    min-height: 70vh;
+}
+
 .home img {
     margin-left: 16.5%;
     margin-top: 10%;
