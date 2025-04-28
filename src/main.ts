@@ -111,3 +111,10 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+
+const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
+const links = document.getElementById('navLinks') as HTMLUListElement
+burger.addEventListener('click', function () {
+    this.classList.toggle('active');
+    links.classList.toggle('active');
+});
