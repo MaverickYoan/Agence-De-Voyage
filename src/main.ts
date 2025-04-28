@@ -1,5 +1,4 @@
 import './style.css'
-import { setupCounter } from './counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <nav class="navbar">
@@ -12,7 +11,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">à propos</a></li>
-            <li><a href="destination.html">Destination</a></li>
+            <li><a href="../destination.html">Destination</a></li>
             <li><a href="#reservation">Réservation</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -101,20 +100,27 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
 
     <!-- * a / p / svg -->
-    <a href="#content" class="back-to-top"><!-- back-to-top -->
+    <button class="back-to-top"><!-- back-to-top -->
         <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
         <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
             <path d="M5 12h14" />
             <path d="m12 4 7 7-7 7" />
         </svg>
-    </a>
+    </button>
 `
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+document.addEventListener('DOMContentLoaded', () => {
 
-const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
-const links = document.getElementById('navLinks') as HTMLUListElement
-burger.addEventListener('click', function () {
-    this.classList.toggle('active');
-    links.classList.toggle('active');
+    const burger = document.getElementById('hamburgerMenu') as HTMLDivElement;
+    const links = document.getElementById('navLinks') as HTMLUListElement
+    burger.addEventListener('click', function () {
+        this.classList.toggle('active');
+        links.classList.toggle('active');
+    });
+
+    const top = document.querySelector('.back-to-top') as HTMLButtonElement;
+
+    top.addEventListener("click", function () {
+        window.scrollTo(0, 0);
+    });
 });
