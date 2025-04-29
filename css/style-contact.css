@@ -98,12 +98,16 @@ figcaption {
     margin: 1rem;
 }
 
-.hamburger-menu {
+/* .hamburger-menu {
     display: none;
 }
 
 .btntest:focus .hamburger-menu {
     display: flex;
+} */
+
+.home {
+    min-height: 100vh;
 }
 
 .home img {
@@ -115,7 +119,7 @@ figcaption {
     opacity: 100%;
 }
 
-/* * crop image logo en cercle */
+/* * crop image chat en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
@@ -146,6 +150,37 @@ figcaption {
 .nav-links {
     mix-blend-mode: difference;
 }
+
+/* * - FADE IN */
+.slogan {
+
+    animation: fadein 10s;
+    -webkit-animation: fadein 10s;
+    /* Safari et Chrome */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* sur Safari et Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -214,26 +249,26 @@ figcaption {
 
 /* BackToTop */
 /*_________________flèche retour en haut____________________*/
-/* flèche retour en haut */
+/*  flèche retour en haut  */
 .back-to-top {
-    /* Basic styling */
+    /*  Basic styling  */
     background-color: oklch(100% 0 0);
     border: 2px solid currentColor;
     border-radius: 0.5rem;
     display: inline-block;
     padding: 0.3rem;
-    /* Hidden by default */
+    /*  Hidden by default  */
     position: fixed;
     inset: auto 1rem 1rem auto;
 }
 
-/* utiliser la couleur du texte */
+/*  utiliser la couleur du texte  */
 .back-to-top:is(:link, :visited) {
     color: currentColor;
     text-decoration: none;
 }
 
-/* masquer le texte retour en haut */
+/*  masquer le texte retour en haut  */
 .back-to-top span {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
@@ -248,7 +283,7 @@ figcaption {
     --green: oklch(85.33% 0.15 141.46);
 }
 
-/* animation progression de couleur la flèche */
+/*  animation progression de couleur la flèche  */
 @keyframes progress {
     0% {
         --progress: 0%;
@@ -259,26 +294,25 @@ figcaption {
     }
 }
 
-/* animation de la flèche */
+/*  animation de la flèche  */
 .back-to-top {
     --green: oklch(85.33% 0.15 141.46);
     animation: progress linear;
     animation-timeline: scroll();
 }
 
-/* rotation de la flèche */
+/*  rotation de la flèche  */
 .back-to-top svg {
     transform: rotate(var(--angle));
 }
 
-/* propriete de la progression de la fleche */
+/*  propriete de la progression de la fleche  */
 @property --progress {
     syntax: '<percentage>';
     inherits: false;
     initial-value: 0%;
 }
 
-/* propriete de l'anglr de la rotayion d'la fleche */
 @property --angle {
     syntax: '<angle>';
     inherits: true;

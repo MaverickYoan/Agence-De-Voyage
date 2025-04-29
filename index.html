@@ -66,8 +66,8 @@
 
         .sky {
             position: absolute;
-            top: 30%;
-            right: -50px;
+            top: 10%;
+            right: 2px;
             animation: sky 7s linear 0s infinite reverse;
             z-index: 99;
         }
@@ -76,6 +76,7 @@
             width: 50px;
         }
 
+        /* trajectoire de l'avion */
         @keyframes sky {
             from {
                 top: 10px;
@@ -89,6 +90,8 @@
         }
     </style>
 
+    <!-- * fond d'écran -->
+
     <div class="sky">
         <img src="images/plane.png">
     </div>
@@ -98,8 +101,9 @@
     <details class="dropdown">
         <summary class="btn m-1">Destinations</summary>
         <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a>Seychelles</a></li>
-            <li><a>Tibet</a></li>
+            <li><a href="destination.html">Seychelles</a></li>
+            <li><a href="destination.html">Tibet</a></li>
+            <a></a>
         </ul>
     </details>
 
@@ -111,8 +115,6 @@
             <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
-            <a class="agrees" href="" target="_blank">
-            </a>
         </div>
 
     </footer>
