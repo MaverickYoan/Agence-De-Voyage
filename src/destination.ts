@@ -11,7 +11,7 @@ document.getElementById("app")!.innerHTML = `
             <nav class="hidden md:flex gap-10 text-xl">
                 <a href="../index.html">Welcome</a>
                 <a href="#destinations">Destinations</a>
-                <a href="">Contact</a>
+                <a href="../contact.html">Contact</a>
             </nav>
         
             <!--Menu burger-->
