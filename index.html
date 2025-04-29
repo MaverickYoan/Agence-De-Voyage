@@ -24,7 +24,7 @@
     <link rel="icon" href="images\favicon.ico" type="image/x-icon">
     <link href="css\style.css" rel=stylesheet>
     <!-- <link rel="stylesheet" href="font.css"> -->
-    <title>Agence2Voyages</title><!-- TITRE -->
+    <title>Agence2Voyages-À propos</title><!-- TITRE -->
 </head>
 
 
@@ -40,10 +40,10 @@
             <div class="bar"></div>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#about">à propos</a></li>
+            <li><a href="index.html">À propos</a></li>
             <li><a href="destination.html">Destination</a></li>
             <li><a href="#reservation">Réservation</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -53,16 +53,6 @@
         <h1 id="home">Agence2Voyages</h1>
         <img class="logo" src="images\logo.png" width="50px" alt="voilier bleu">
     </section>
-
-
-    <!-- * reservation section -->
-
-    <section class="reservation"><!-- reservation / h1 / id reservation / img -->
-        <h1 id="reservation">reservation</h1>
-        <img src="" alt="">
-    </section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- * animation plane -->
 
@@ -88,8 +78,8 @@
 
         @keyframes sky {
             from {
-                top: 50px;
-                right: -40px;
+                top: 10px;
+                right: -50px;
             }
 
             to {
@@ -103,15 +93,15 @@
         <img src="images/plane.png">
     </div>
 
-    <!-- * contact section -->
+    <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
 
-    <section class="contact"><!-- contact / h1 / id contact / img -->
-        <h1 id="contact">contact</h1>
-        <img src="" alt="">
-    </section>
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <details class="dropdown">
+        <summary class="btn m-1">Destinations</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><a>Seychelles</a></li>
+            <li><a>Tibet</a></li>
+        </ul>
+    </details>
 
 
     <!-- * FOOTER -->
@@ -127,16 +117,6 @@
 
     </footer>
 
-
-
-    <!-- * a / p / svg -->
-    <a href="#content" class="back-to-top"><!-- back-to-top -->
-        <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-        <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14" />
-            <path d="m12 4 7 7-7 7" />
-        </svg>
-    </a>
 
     <script src="script\script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 
