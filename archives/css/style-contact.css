@@ -107,11 +107,7 @@ figcaption {
 } */
 
 .home {
-<<<<<<< HEAD
-    min-height: 70vh;
-=======
     min-height: 100vh;
->>>>>>> 6962706abfb34e77a19ba727ed1814f54c7e44b2
 }
 
 .home img {
