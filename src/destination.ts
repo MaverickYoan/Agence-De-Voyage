@@ -2,9 +2,9 @@ import "./style.css"
 
 document.getElementById("app")!.innerHTML = `
     <div class="min-h-screen bg-black text-white font-montserrat flex flex-col">
-        <header class="container mx-auto relative md:flex justify-between items-center top-8 md:h-34">
+        <header class="container mx-auto relative md:grid grid-cols-3 justify-between items-center top-8 md:h-34">
             <h1 class="hidden md:block">Agence2Voyage</h1>
-            <img alt="Logo" class="w-22 md:w-33 mx-auto md:absolute md:top-0 md:left-1/2 md:-translate-x-1/2"
+            <img alt="Logo" class="w-12.5 mx-auto rounded-full"
                  src="/images/logo.png">
         
             <!--Menu PC-->
@@ -35,16 +35,54 @@ document.getElementById("app")!.innerHTML = `
             </nav>
         </header>
         <main class="container mx-auto grow">
-            <section id="destinations" class="mt-40">
-                <div class="flex flex-wrap justify-between pb-20">
-                    <img src="/images/Tibet/Tibet%201.png" class="mx-auto md:m-0" alt="Tibet">
+            <section class="mt-40" id="destinations">
+                <div class="grid md:grid-cols-2 gap-10 justify-between pb-20">
+                    <div class="carousel w-full">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide4" class="btn btn-circle">❮</a>
+                                <a href="#slide2" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img
+                                src="/images/Tibet/Tibet%20(2).jpg"
+                                class="w-full"  alt="Tibet 2"/>
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide1" class="btn btn-circle">❮</a>
+                                <a href="#slide3" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide2" class="btn btn-circle">❮</a>
+                                <a href="#slide4" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#slide3" class="btn btn-circle">❮</a>
+                                <a href="#slide1" class="btn btn-circle">❯</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="flex flex-col text-center pt-5  md:pt-0">
                         <p>Destination 1</p>
                         <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
                     </div>
+                    <div class="flex w-full justify-center gap-2 py-2">
+                      <a href="#slide1" class="btn btn-xs">1</a>
+                      <a href="#slide2" class="btn btn-xs">2</a>
+                      <a href="#slide3" class="btn btn-xs">3</a>
+                      <a href="#slide4" class="btn btn-xs">4</a>
+                    </div>
                 </div>
+                
                 <div class="mb-20">
-                    <img src="/images/Seychelles/Seychelles%201.png" alt="Seychelles" class="mx-auto md:m-0">
+                    <img alt="Seychelles" class="mx-auto md:m-0" src="/images/Seychelles/Seychelles%201.png">
                 </div>
             </section>
         </main>

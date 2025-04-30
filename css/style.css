@@ -132,6 +132,7 @@ figcaption {
     display: flex;
     justify-self: left;
     margin-left: 0.5rem;
+    margin-block: 10px;
 }
 
 .reservation,
@@ -394,3 +395,10 @@ figcaption {
     -webkit-box-shadow: 1px 1px 4px #777777;
     -moz-box-shadow: 1px 1px 4px #777777;
 } */
+
+@media screen and (width >= 48rem) {
+    #home {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
