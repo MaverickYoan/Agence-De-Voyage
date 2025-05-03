@@ -28,88 +28,128 @@ document.getElementById("app")!.innerHTML = `
             </button>
         
             <!--Menu mobile-->
-            <nav class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black hidden" id="phone-menu">
+            <nav class="md:hidden fixed top-0 left-0 right-0 bottom-0 bg-black hidden z-50" id="phone-menu">
                 <button class="absolute right-10 top-15" id="close">
                     <img alt="Cross Icon" class="w-15" src="/images/cross.svg"/>
                 </button>
             </nav>
         </header>
         <main class="container mx-auto grow">
-            <section class="mt-40" id="destinations">
+            <section class="mt-20 md:mt-40" id="destinations">
                 <div class="grid md:grid-cols-2 gap-10 justify-between pb-20">
-                    <div class="carousel w-full">
-                        <div id="slide1" class="carousel-item relative w-full">
-                            <figure class="relative w-full">
-                                <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
-                                <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-5">
-                                    Diapo 1
-                                </figcaption>
-                            </figure>
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❯</a>
+                    <div class="order-2 md:order-1">
+                        <div class="carousel w-full">
+                            <div id="slide1" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
+                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
+                                        Diapo 1
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide8">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide2" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(2).jpg" class="w-full" alt="Tibet 2"/>
+                                    <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-2 md:p-5">
+                                        Diapo 2
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide3" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3" class="w-full">
+                                    <figcaption class="absolute bg-black/75 p-2 md:p-5 bottom-0 left-0 right-0">
+                                        Diapo 3
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide4" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4" class="w-full">
+                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">Diapo 4</figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide5" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(5).jpg" alt="Tibet 5" class="w-full">
+                                    <figcaption class="absolute bottom-0 left-0 right-0 p-2 md:p-5 bg-black/75">
+                                        Diapo 5
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide6">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide6" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(6).jpg" alt="Tibet 6" class="w-full">
+                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                        Diapo 6
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide7">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide7" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(7).jpg" alt="Tibet 7" class="w-full">
+                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                        Diapo 7
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide6">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide8">❯</a>
+                                </div>
+                            </div>
+                            <div id="slide8" class="carousel-item relative w-full">
+                                <figure class="relative w-full">
+                                    <img src="/images/Tibet/Tibet%20(8).jpg" alt="Tibet 8" class="w-full">
+                                    <figcaption class="absolute bottom-0 left-0 right-0 bg-black/75 p-2 md:p-5">
+                                        Diapo 8
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide7">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❯</a>
+                                </div>
                             </div>
                         </div>
-                        <div id="slide2" class="carousel-item relative w-full">
-                            <figure class="relative w-full">
-                                <img src="/images/Tibet/Tibet%20(2).jpg" class="w-full" alt="Tibet 2"/>
-                                <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-5">
-                                    Diapo 2
-                                </figcaption>
-                            </figure>
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide3" class="carousel-item relative w-full">
-                            <figure class="relative w-full">
-                                <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3" class="w-full">
-                                <figcaption class="absolute bg-black/75 p-5 bottom-0 left-0 right-0">
-                                    Diapo 3
-                                </figcaption>
-                            </figure>
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide4" class="carousel-item relative w-full">
-                            <figure class="relative w-full">
-                                <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4" class="w-full">
-                                <figcaption class="absolute bottom-0 left-0 right-0 p-5 bg-black/75">Diapo 4</figcaption>
-                            </figure>
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❯</a>
-                            </div>
-                        </div>
-                        <div id="slide5" class="carousel-item relative w-full">
-                            <figure class="relative w-full">
-                                <img src="/images/Tibet/Tibet%20(5).jpg" alt="Tibet 5" class="w-full">
-                                <figcaption class="absolute bottom-0 left-0 right-0 p-5 bg-black/75">
-                                    Diapo 5
-                                </figcaption>
-                            </figure>
-                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❮</a>
-                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❯</a>
-                            </div>
+                        <div class="flex w-full justify-center gap-2 py-2 carousel-menu">
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide1">1</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide2">2</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide3">3</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide4">4</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide5">5</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide6">6</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide7">7</a>
+                            <a href="#" class="btn btn-xs carousel-nav" data-slide="slide8">8</a>
                         </div>
                     </div>
-                    <div class="flex flex-col text-center pt-5  md:pt-0">
+                    <div class="flex flex-col text-center pt-5  md:pt-0 order-1 md:order-2">
                         <p>Destination 1</p>
                         <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
                     </div>
-                    <div class="flex w-full justify-center gap-2 py-2 carousel-menu">
-                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide1">1</a>
-                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide2">2</a>
-                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide3">3</a>
-                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide4">4</a>
-                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide5">5</a>
-                    </div>
                 </div>
-                
                 <div class="mb-20">
                     <img alt="Seychelles" class="mx-auto md:m-0" src="/images/Seychelles/Seychelles%201.png">
                 </div>
