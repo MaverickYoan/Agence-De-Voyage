@@ -39,33 +39,61 @@ document.getElementById("app")!.innerHTML = `
                 <div class="grid md:grid-cols-2 gap-10 justify-between pb-20">
                     <div class="carousel w-full">
                         <div id="slide1" class="carousel-item relative w-full">
-                            <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
+                            <figure class="relative w-full">
+                                <img src="/images/Tibet/Tibet%20(1).jpg" alt="Tibet" class="w-full">
+                                <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-5">
+                                    Diapo 1
+                                </figcaption>
+                            </figure>
                             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#slide4" class="btn btn-circle">❮</a>
-                                <a href="#slide2" class="btn btn-circle">❯</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❯</a>
                             </div>
                         </div>
                         <div id="slide2" class="carousel-item relative w-full">
-                            <img
-                                src="/images/Tibet/Tibet%20(2).jpg"
-                                class="w-full"  alt="Tibet 2"/>
+                            <figure class="relative w-full">
+                                <img src="/images/Tibet/Tibet%20(2).jpg" class="w-full" alt="Tibet 2"/>
+                                <figcaption class="absolute top-full -translate-y-full bg-black/75 left-0 right-0 p-5">
+                                    Diapo 2
+                                </figcaption>
+                            </figure>
                             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#slide1" class="btn btn-circle">❮</a>
-                                <a href="#slide3" class="btn btn-circle">❯</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❯</a>
                             </div>
                         </div>
                         <div id="slide3" class="carousel-item relative w-full">
-                            <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3">
+                            <figure class="relative w-full">
+                                <img src="/images/Tibet/Tibet%20(3).jpg" alt="Tibet 3" class="w-full">
+                                <figcaption class="absolute bg-black/75 p-5 bottom-0 left-0 right-0">
+                                    Diapo 3
+                                </figcaption>
+                            </figure>
                             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#slide2" class="btn btn-circle">❮</a>
-                                <a href="#slide4" class="btn btn-circle">❯</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide2">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❯</a>
                             </div>
                         </div>
                         <div id="slide4" class="carousel-item relative w-full">
-                            <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4">
+                            <figure class="relative w-full">
+                                <img src="/images/Tibet/Tibet%20(4).jpg" alt="Tibet 4" class="w-full">
+                                <figcaption class="absolute bottom-0 left-0 right-0 p-5 bg-black/75">Diapo 4</figcaption>
+                            </figure>
                             <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                                <a href="#slide3" class="btn btn-circle">❮</a>
-                                <a href="#slide1" class="btn btn-circle">❯</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide3">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide5">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide5" class="carousel-item relative w-full">
+                            <figure class="relative w-full">
+                                <img src="/images/Tibet/Tibet%20(5).jpg" alt="Tibet 5" class="w-full">
+                                <figcaption class="absolute bottom-0 left-0 right-0 p-5 bg-black/75">
+                                    Diapo 5
+                                </figcaption>
+                            </figure>
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide4">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="slide1">❯</a>
                             </div>
                         </div>
                     </div>
@@ -73,11 +101,12 @@ document.getElementById("app")!.innerHTML = `
                         <p>Destination 1</p>
                         <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
                     </div>
-                    <div class="flex w-full justify-center gap-2 py-2">
-                      <a href="#slide1" class="btn btn-xs">1</a>
-                      <a href="#slide2" class="btn btn-xs">2</a>
-                      <a href="#slide3" class="btn btn-xs">3</a>
-                      <a href="#slide4" class="btn btn-xs">4</a>
+                    <div class="flex w-full justify-center gap-2 py-2 carousel-menu">
+                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide1">1</a>
+                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide2">2</a>
+                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide3">3</a>
+                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide4">4</a>
+                      <a href="#" class="btn btn-xs carousel-nav" data-slide="slide5">5</a>
                     </div>
                 </div>
                 
@@ -89,18 +118,32 @@ document.getElementById("app")!.innerHTML = `
     </div>
 `
 
-const burger = document.getElementById("burger") as HTMLButtonElement;
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger") as HTMLButtonElement;
 
-const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
+    const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
 
-const cross = document.getElementById("close") as HTMLButtonElement;
+    const cross = document.getElementById("close") as HTMLButtonElement;
 
 // Bouton pour ouvrir le menu
-burger.addEventListener("click", () => {
-    phoneMenu.classList.remove("hidden");
-})
+    burger.addEventListener("click", () => {
+        phoneMenu.classList.remove("hidden");
+    })
 
 // Bouton pour fermer le menu
-cross.addEventListener("click", () => {
-    phoneMenu.classList.add("hidden")
+    cross.addEventListener("click", () => {
+        phoneMenu.classList.add("hidden")
+    })
+
+    document.querySelectorAll(".carousel-nav").forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const anchor = link as HTMLAnchorElement;
+            const targetId = anchor.dataset.slide;
+            const target = document.getElementById(targetId!);
+
+            target?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+        })
+    })
 })
