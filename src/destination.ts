@@ -2,7 +2,7 @@ import "./style.css"
 
 document.getElementById("app")!.innerHTML = `
     <div class="min-h-screen bg-black text-white font-montserrat flex flex-col">
-        <header class="container mx-auto relative md:grid grid-cols-3 justify-between items-center top-8 md:h-34">
+        <header class="container mx-auto relative md:grid grid-cols-3 justify-between items-center md:h-34">
             <h1 class="hidden md:block">Agence2Voyage</h1>
             <img alt="Logo" class="w-12.5 mx-auto rounded-full"
                  src="/images/logo.png">
@@ -145,16 +145,88 @@ document.getElementById("app")!.innerHTML = `
                             <a href="#" class="btn btn-xs carousel-nav" data-slide="slide8">8</a>
                         </div>
                     </div>
-                    <div class="flex flex-col text-center pt-5  md:pt-0 order-1 md:order-2">
+                    <div class="flex flex-col text-center pt-5 md:pt-0 order-1 md:order-2">
                         <p>Destination 1</p>
                         <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
                     </div>
                 </div>
-                <div class="mb-20">
-                    <img alt="Seychelles" class="mx-auto md:m-0" src="/images/Seychelles/Seychelles%201.png">
+                
+                <!--Section Seychelles-->
+                <div class="mb-20 grid md:grid-cols-2 gap-10">
+                    <div class="flex flex-col text-center order-1 md:order-2">
+                        <p>Destination 2</p>
+                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une autre destination aux Seychelles</p>
+                    </div>
+                    <div class="carousel w-full">
+                        <div id="seychelles1" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(1).jpg" alt="Seychelles 1" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles8">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles2">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles2" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(2).jpg" alt="Seychelles 1" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles1">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles3">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles3" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(3).jpg" alt="Seychelles 1" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles2">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles4">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles4" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(4).jpg" alt="Seychelles 1" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles3">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles5">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles5" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(5).jpg" alt="Seychelles 1" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles4">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles6">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles6" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(6).jpg" alt="Seychelles 6" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles5">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles7">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles7" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(7).jpg" alt="Seychelles 7" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles6">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles8">❯</a>
+                            </div>
+                        </div>
+                        <div id="seychelles8" class="carousel-item relative w-full">
+                            <img src="/images/Seychelles/Seychelles%20(8).jpg" alt="Seychelles 8" class="w-full">
+                            <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles7">❮</a>
+                                <a href="#" class="btn btn-circle carousel-nav" data-slide="seychelles1">❯</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+        <footer><!-- * droits / h6 -->
+            <div class="droits items-center text-xs text-white font-montserrat flex flex-col">
+                <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+                    <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
+                </h6>
+                <a class="agrees" href="" target="_blank">
+                </a>
+            </div>
+        </footer>
     </div>
 `
 
