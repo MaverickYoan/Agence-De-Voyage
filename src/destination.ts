@@ -147,7 +147,8 @@ document.getElementById("app")!.innerHTML = `
                     </div>
                     <div class="flex flex-col text-center pt-5 md:pt-0 order-1 md:order-2">
                         <p>Destination 1</p>
-                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet</p>
+                        <p class="text-2xl flex items-center justify-center grow">Nous pouvons par exemple proposer une destination au Tibet
+                        </p>
                     </div>
                 </div>
                 
@@ -228,6 +229,26 @@ document.getElementById("app")!.innerHTML = `
                         </div>
                     </div>
                 </div>
+                
+                <!--Voyage à Londres-->
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="md:order-2 text-center flex flex-col">
+                        <p>Destination 3</p>
+                        <p class="text-2xl flex items-center justify-center grow">Vous préférez un voyage plus orienté 
+                        culturel ? Alors, nous vous proposons aussi des séjours à Londres</p>
+                    </div>
+                    <div class="md:order-1">
+                        <div class="carousel w-full">
+                            <div class="carousel-item relative w-full" id="londres1">
+                                <img src="/images/Londres/Londres%201.jpg" alt="Londres">
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❯</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer><!-- * droits / h6 -->
@@ -267,7 +288,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const targetId = anchor.dataset.slide;
             const target = document.getElementById(targetId!);
 
-            target?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+            target?.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'})
         })
     })
 })
