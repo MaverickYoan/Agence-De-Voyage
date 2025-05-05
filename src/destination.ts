@@ -15,8 +15,8 @@ document.getElementById("app")!.innerHTML = `
             </nav>
         
             <!--Menu burger-->
-            <button class="md:hidden absolute top-1/2 right-10 -translate-y-1/2" id="burger">
-                <svg class="fill-white w-15" id="fi_5358649"
+            <button class="md:hidden absolute top-10 right-10" id="burger">
+                <svg class="fill-white w-15 h-15" id="fi_5358649"
                      viewBox="0 0 24 24"
                      xmlns="http://www.w3.org/2000/svg">
                     <g>
@@ -144,21 +144,44 @@ document.getElementById("app")!.innerHTML = `
                 </div>
             </section>
         </main>
+        <footer><!-- * droits / h6 -->
+            <div class="droits items-center text-xs text-white font-montserrat flex flex-col">
+                <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
+                    <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
+                </h6>
+                <a class="agrees" href="" target="_blank">
+                </a>
+            </div>
+        </footer>
     </div>
 `
 
-const burger = document.getElementById("burger") as HTMLButtonElement;
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger") as HTMLButtonElement;
 
-const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
+    const phoneMenu = document.getElementById("phone-menu") as HTMLDivElement;
 
-const cross = document.getElementById("close") as HTMLButtonElement;
+    const cross = document.getElementById("close") as HTMLButtonElement;
 
-// Bouton pour ouvrir le menu
-burger.addEventListener("click", () => {
-    phoneMenu.classList.remove("hidden");
-})
+    // Bouton pour ouvrir le menu
+    burger.addEventListener("click", () => {
+        phoneMenu.classList.remove("hidden");
+    })
 
-// Bouton pour fermer le menu
-cross.addEventListener("click", () => {
-    phoneMenu.classList.add("hidden")
+    // Bouton pour fermer le menu
+    cross.addEventListener("click", () => {
+        phoneMenu.classList.add("hidden")
+    })
+
+    document.querySelectorAll(".carousel-nav").forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+
+            const anchor = link as HTMLAnchorElement;
+            const targetId = anchor.dataset.slide;
+            const target = document.getElementById(targetId!);
+
+            target?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+        })
+    })
 })

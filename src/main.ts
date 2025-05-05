@@ -1,19 +1,19 @@
-import './style.css'
+import '../css/style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <nav class="navbar">
         <!-- <button class="btntest">bouton</button> -->
-
         <div class="hamburger-menu" id="hamburgerMenu">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
         </div>
         <ul class="nav-links" id="navLinks">
-            <li><a href="#about">à propos</a></li>
-            <li><a href="../destination.html">Destination</a></li>
-            <li><a href="#reservation">Réservation</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/index.html">À propos</a></li>
+            <li><a href="/destination.html">Destination</a></li>
+            <!--  // - à voir comment tu veux que l'on fasse pour les réservation Florian. -->
+            <!-- <li><a href="#reservation">Réservation</a></li> -->
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
     </nav>
 
@@ -21,33 +21,23 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section class="home"><!-- home / h1 / id home / img -->
         <h1 id="home">Agence2Voyages</h1>
-        <img class="logo" src="/images/logo.png" width="50px"
-            alt="voilier bleu">
+        <img class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
     </section>
-
-
-    <!-- * reservation section -->
-
-    <section class="reservation"><!-- reservation / h1 / id reservation / img -->
-        <h1 id="reservation">reservation</h1>
-        <img src="" alt="">
-    </section>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <!-- * animation plane -->
 
     <style type="text/css">
         .home {
-            background: url(/images/sky.jpg) no-repeat;
+            background: url(/images/sky.jpg);
+            background-repeat: no-repeat;
             background-size: cover;
             overflow: hidden;
         }
 
         .sky {
             position: absolute;
-            top: 30%;
-            right: -50px;
+            top: 10%;
+            right: 2px;
             animation: sky 7s linear 0s infinite reverse;
             z-index: 99;
         }
@@ -56,10 +46,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             width: 50px;
         }
 
+        /* trajectoire de l'avion */
         @keyframes sky {
             from {
-                top: 50px;
-                right: -40px;
+                top: 10px;
+                right: -50px;
             }
 
             to {
@@ -69,19 +60,22 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         }
     </style>
 
+    <!-- * fond d'écran -->
+
     <div class="sky">
-        <img src="/images/plane.png">
+        <img src="images/plane.png">
     </div>
 
-    <!-- * contact section -->
+    <!-- * Menu dropdown pour sélectionner Seychelles ou Tibet comme destination -->
 
-    <section class="contact"><!-- contact / h1 / id contact / img -->
-        <h1 id="contact">contact</h1>
-        <img src="" alt="">
-    </section>
-
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <details class="dropdown">
+        <summary class="btn m-1">Destinations</summary>
+        <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+            <li><a href="destination.html">Seychelles</a></li>
+            <li><a href="destination.html">Tibet</a></li>
+            <a></a>
+        </ul>
+    </details>
 
 
     <!-- * FOOTER -->
@@ -91,22 +85,12 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
             <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
                 <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
             </h6>
-            <a class="agrees" href="" target="_blank">
-            </a>
         </div>
 
     </footer>
 
 
-
-    <!-- * a / p / svg -->
-    <button class="back-to-top"><!-- back-to-top -->
-        <!-- aria-hidden="true" opur masquer l'icon de l'écran -->
-        <svg width="18" height="18" viewbox=" 0 0 24 24" aria-hidden="true">
-            <path d="M5 12h14" />
-            <path d="m12 4 7 7-7 7" />
-        </svg>
-    </button>
+    <script src="../script/script.js"></script><!-- * - 2 - Script Section : activer le menu mobile -->
 `
 
 document.addEventListener('DOMContentLoaded', () => {
