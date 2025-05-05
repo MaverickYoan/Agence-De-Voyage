@@ -59,7 +59,6 @@ body {
 
 /* Paramètre - .nav-links & li -  margin */
 .nav-links li {
-    margin-top: 80px;
     margin-left: 20px;
 }
 
@@ -67,7 +66,6 @@ body {
 .nav-links a {
     /* color: white; */
     color: rgb(255, 255, 255);
-    font-size: larger;
     font-weight: 900;
     text-decoration: none;
     padding: 5px 10px;
@@ -115,32 +113,26 @@ figcaption {
 .home img {
     margin-left: 16.5%;
     margin-top: 10%;
+
     display: flex;
     justify-content: center;
     opacity: 100%;
 }
 
-/* * crop image en cercle  */
+/* * crop image chat en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
 }
 
 #home {
-    display: flex;
-    justify-self: left;
-    margin-top: -0.5rem;
-    margin-left: 13rem;
-}
-
-#home-logo {
     color: black;
     font-weight: 900;
-    font-size: 36pt;
+    font-size: larger;
     display: flex;
     justify-self: left;
-    margin-top: 5rem;
     margin-left: 0.5rem;
+    margin-block: 10px;
 }
 
 .reservation,
@@ -403,3 +395,10 @@ figcaption {
     -webkit-box-shadow: 1px 1px 4px #777777;
     -moz-box-shadow: 1px 1px 4px #777777;
 } */
+
+@media screen and (width >=48rem) {
+    #home {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
