@@ -59,6 +59,7 @@ body {
 
 /* Paramètre - .nav-links & li -  margin */
 .nav-links li {
+    margin-top: 80px;
     margin-left: 20px;
 }
 
@@ -66,6 +67,7 @@ body {
 .nav-links a {
     /* color: white; */
     color: rgb(255, 255, 255);
+    font-size: larger;
     font-weight: 900;
     text-decoration: none;
     padding: 5px 10px;
@@ -113,24 +115,31 @@ figcaption {
 .home img {
     margin-left: 16.5%;
     margin-top: 10%;
-
     display: flex;
     justify-content: center;
     opacity: 100%;
 }
 
-/* * crop image chat en cercle  */
+/* * crop image en cercle  */
 .logo {
     width: 50px;
     clip-path: circle(50% at 50% 50%)
 }
 
 #home {
-    color: black;
-    font-weight: 900;
-    font-size: larger;
     display: flex;
     justify-self: left;
+    margin-top: -0.5rem;
+    margin-left: 13rem;
+}
+
+#home-logo {
+    color: black;
+    font-weight: 900;
+    font-size: 36pt;
+    display: flex;
+    justify-self: left;
+    margin-top: 5rem;
     margin-left: 0.5rem;
 }
 
