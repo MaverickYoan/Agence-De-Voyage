@@ -1,4 +1,4 @@
-import '../css/style.css'
+import './style.css'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <nav class="navbar">
@@ -21,7 +21,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <section class="home"><!-- home / h1 / id home / img -->
         <h1 id="home">Agence2Voyages</h1>
-        <img class="logo" src="/images/logo.png" width="50px" alt="voilier bleu">
+        <img alt="voilier bleu" class="logo" src="/images/logo.png" width="50px">
     </section>
 
     <!-- * animation plane -->
@@ -71,12 +71,11 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <details class="dropdown">
         <summary class="btn m-1">Destinations</summary>
         <ul class="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-            <li><a href="destination.html">Seychelles</a></li>
-            <li><a href="destination.html">Tibet</a></li>
+            <li><a href="../destination.html">Seychelles</a></li>
+            <li><a href="../destination.html">Tibet</a></li>
             <a></a>
         </ul>
     </details>
-
 
     <!-- * FOOTER -->
 
