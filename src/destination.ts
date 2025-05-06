@@ -239,18 +239,40 @@ document.getElementById("app")!.innerHTML = `
                     </div>
                     <div class="md:order-1">
                         <div class="carousel w-full">
-                            <div class="carousel-item relative w-full" id="londres1">
-                                <img src="/images/Londres/Londres%201.jpg" class="w-full object-cover"
+                            <div class="carousel-item relative w-full group" id="londres1">
+                                <figure class="relative">
+                                    <img src="/images/Londres/Londres%201.jpg" class="w-ful h-full object-cover"
                                  alt="Londres">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
+                                        London city vue du ciel
+                                    </figcaption>
+                                </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
-                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres3">❮</a>
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❯</a>
                                 </div>
                             </div>
-                            <div class="carousel-item relative w-full" id="londres2">
-                                <img src="/images/Londres/221b%20Baker%20Street.jpg" class="w-full object-cover" alt="Baker Street">
+                            <div class="carousel-item relative w-full group" id="londres2">
+                                <figure class="relative">
+                                    <img src="/images/Londres/221b%20Baker%20Street.jpg" class="w-full h-full object-cover" alt="Baker Street">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 md:opacity-0 group-hover:opacity-100 duration-300">
+                                        Même Sherlock Holmes a droit à sa propre adresse
+                                    </figcaption>
+                                </figure>
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres3">❯</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item relative w-full group" id="londres3">
+                                <figure class="relative">
+                                    <img src="/images/Londres/Tower%20bridge.jpg" class="w-full h-full object-cover" alt="Tower bridge">
+                                    <figcaption class="absolute bottom-5 left-5 right-5 bg-black/75 p-2 md:p-5 text-white md:opacity-0 group-hover:opacity-100 duration-300">
+                                        Le Tower Bridge dans toute sa splendeur
+                                    </figcaption>
+                                </figure>
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❮</a>
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❯</a>
                                 </div>
                             </div>
