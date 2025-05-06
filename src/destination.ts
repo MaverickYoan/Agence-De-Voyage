@@ -240,7 +240,15 @@ document.getElementById("app")!.innerHTML = `
                     <div class="md:order-1">
                         <div class="carousel w-full">
                             <div class="carousel-item relative w-full" id="londres1">
-                                <img src="/images/Londres/Londres%201.jpg" alt="Londres">
+                                <img src="/images/Londres/Londres%201.jpg" class="w-full object-cover"
+                                 alt="Londres">
+                                <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❮</a>
+                                    <a href="#" class="btn btn-circle carousel-nav" data-slide="londres2">❯</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item relative w-full" id="londres2">
+                                <img src="/images/Londres/221b%20Baker%20Street.jpg" class="w-full object-cover" alt="Baker Street">
                                 <div class="absolute top-1/2 left-5 right-5 -translate-y-1/2 flex transform justify-between">
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❮</a>
                                     <a href="#" class="btn btn-circle carousel-nav" data-slide="londres1">❯</a>
@@ -251,7 +259,7 @@ document.getElementById("app")!.innerHTML = `
                 </div>
             </section>
         </main>
-        <footer><!-- * droits / h6 -->
+        <footer class="my-20"><!-- * droits / h6 -->
             <div class="droits items-center text-xs text-white font-montserrat flex flex-col">
                 <h6>&copy; 2025 Projet_3. Tous droits réservés. @onlineformapro
                     <br>Mentions légales | Politique de confidentialité | Conditions générales de vente<br>
